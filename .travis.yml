@@ -28,4 +28,4 @@ after_success:
 
 notifications:
   email:
-    - andreas.mantke@documentfoundation.org
+    - maand@gmx.de
