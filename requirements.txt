@@ -5,3 +5,4 @@ pyparsing==2.1.10
 setuptools==33.1.1
 six==1.10.0
 zc.buildout==2.9.5
+flake8==3.3.0
