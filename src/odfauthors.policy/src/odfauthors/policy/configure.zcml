@@ -1,0 +1,58 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="odfauthors.policy">
+
+  <includeDependencies package="." />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ODFAuthors-Site Policy"
+      directory="profiles/default"
+      description="Installs the odfauthors.policy add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="odfauthors.policy-postInstall"
+      title="odfauthors.policy post_install import step"
+      description="Post install import step from odfauthors.policy"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="odfauthors.policy"
+      directory="profiles/uninstall"
+      description="Uninstalls the odfauthors.policy add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="odfauthors.policy-uninstall"
+      title="odfauthors.policy uninstall import step"
+      description="Import step run during ininstalling odfauthors.policy"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="odfauthors.policy-hiddenprofiles" />
+
+  <monkey:patch
+      description="Mail patching https://github.com/plone/Products.CMFPlone/pull/1901"
+      class="Products.CMFPlone.browser.contact_info.ContactForm"
+      original="send_message"
+      replacement=".patches.send_message"
+      preserveOriginal="True"
+      />
+
+</configure>
