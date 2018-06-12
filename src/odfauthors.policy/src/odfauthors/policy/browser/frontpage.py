@@ -7,4 +7,3 @@ class frontpageView(BrowserView):
     """ The view of the ODFAuthors frontpage
     """
 
-
