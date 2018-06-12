@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-from plone import api
 from Products.Five.browser import BrowserView
-from odfauthors.policy import _
-from Acquisition import aq_inner
 
 
 
