@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="ofauthors.policy"
+      interface="odfauthors.policy.interfaces.IOdfAuthorspolicyLayer"
+      />
+</layers>
