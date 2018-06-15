@@ -47,7 +47,8 @@ setup(
         'setuptools',
         'z3c.jbot',
         'collective.monkeypatcher',
-        'kitconcept.dsgvo'
+        'kitconcept.dsgvo',
+        'odfauthors.theme'
     ],
     extras_require={
         'test': [
