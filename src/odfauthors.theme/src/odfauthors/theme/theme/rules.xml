@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- Import Barceloneta rules -->
+  <xi:include href="++theme++barceloneta/rules.xml" />
+
+  <append css:theme="head">
+    <link rel="stylesheet" type="text/css" media="screen" href="{$portal_url}/++theme++barceloneta/less/barceloneta-compiled.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{$portal_url}/++theme++odfauthors./styles/main.css" />
+  </append>
+
+  <rules css:if-content="#visual-portal-wrapper">
+
+    <replace content="a[@id='portal-logo']/img">
+      <img src="{$portal_url}/++theme++odfauthors.theme/logo.png" alt="logo" title="logo" />
+    </replace>
+
+    <drop css:content="#portal-footer-signature" />
+    <!-- Disable the pat-modal in contact-info -->
+    <drop attributes="class" content="a[contains(@href, 'contact-info')]" />
+
+  </rules>
+
+</rules>
