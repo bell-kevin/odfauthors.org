@@ -10,7 +10,7 @@
 
   <append css:theme="head">
     <link rel="stylesheet" type="text/css" media="screen" href="{$portal_url}/++theme++barceloneta/less/barceloneta-compiled.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{$portal_url}/++theme++odfauthors./styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{$portal_url}/++theme++odfauthors.theme/styles/main.css" />
   </append>
 
   <rules css:if-content="#visual-portal-wrapper">
