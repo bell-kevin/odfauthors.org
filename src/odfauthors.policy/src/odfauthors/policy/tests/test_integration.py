@@ -5,10 +5,6 @@ from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces.controlpanel import IMailSchema
 from odfauthors.policy.testing import ODFAUTHORS_POLICY_INTEGRATION_TESTING
 from zope.component import getUtility
-from zope.event import notify
-from zope.interface import Invalid
-from zope.lifecycleevent import ObjectModifiedEvent
-from zope.lifecycleevent import ObjectRemovedEvent
 
 import unittest
 
@@ -28,4 +24,3 @@ class TestOdfauthorsValidators(unittest.TestCase):
             IMailSchema, prefix='plone', check=False)
         mail_settings.smtp_host = u'localhost'
         mail_settings.email_from_address = 'whatever'
-
