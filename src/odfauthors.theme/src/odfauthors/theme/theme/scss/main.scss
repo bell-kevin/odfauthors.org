@@ -1,0 +1,136 @@
+/* TDF-Extras */
+$brand-main: #00A500;
+$brand-alternate: #626c72;
+
+h1,
+h2 {
+  color: $brand-main;
+}
+
+h3 {
+  color: $brand-alternate;
+}
+
+a {
+  color: $brand-main;
+  &:hover {
+    text-decoration: none;
+    color: #31363a;
+  }
+}
+.plone-breadcrumb ol a {
+    color: $brand-main;
+}
+
+// Overrides
+.plone-navbar {
+    background-color: $brand-main;
+    box-shadow: none;
+}
+.plone-navbar-nav > .selected > a,
+.plone-navbar-nav > .selected > a:hover,
+.plone-navbar-nav > .selected > a:focus,
+.plone-nav > li > a:hover,
+.plone-nav > li > a:focus {
+  color: white;
+  background-color: #2e3133;
+}
+
+#portal-logo img {
+  width: 215px;
+}
+
+#portal-footer-wrapper a {
+    color: $brand-main;
+}
+
+#content-header {
+  background-color: $brand-main;
+  padding-top: 10px;
+}
+
+#portal-header {
+  margin: 0 auto;
+}
+
+#odfauthors-footer-wrapper {
+  padding:30px 15px 10px 15px;
+  background-color: #2e3133;
+  color: #cccccc;
+  text-align: center;
+  clear: both;
+}
+
+#odfauthors-footer-wrapper p {
+    padding-bottom: 0px;
+}
+
+#odfauthors-footer-wrapper abbr,
+#odfauthors-footer-wrapper ul {
+  color: #cccccc;
+}
+#odfauthors-footer-wrapper a {
+  color: #00A500;
+}
+#odfauthors-footer-wrapper a:hover {
+  color: #00A500;
+}
+#odfauthors-footer-wrapper .portletWrapper {
+  display: inline-block;
+}
+#odfauthors-footer-wrapper .portletWrapper:first-child {
+  display: block;
+  border-bottom: 1px solid #4d4d4d;
+  padding-bottom: 1em;
+  margin-bottom: .5em;
+}
+#odfauthors-footer-wrapper .portlet {
+  background: transparent;
+  border: 0;
+  font-weight: 300;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+#odfauthors-footer-wrapper .portlet .portletContent {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+#odfauthors-footer-wrapper .portlet .portletContent > * {
+  padding: inherit;
+}
+#odfauthors-footer-wrapper .portlet .portletContent li {
+  background: transparent;
+  display: inline-block;
+  border: 0;
+  white-space: nowrap;
+  padding: 10px 30px;
+}
+#odfauthors-footer-wrapper .portlet#portal-colophon .portletContent a {
+  padding: 10px 30px;
+}
+#odfauthors-footer-wrapper .portlet .portletItem:before,
+#odfauthors-footer-wrapper .portlet .portletItem a:before {
+  content: "";
+}
+#odfauthors-footer-wrapper .portlet .portletItem a {
+  padding: 0;
+  border: 0;
+}
+#odfauthors-footer-wrapper .portlet .portletActions {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+#odfauthors-footer p {
+    color:#ffffff;
+    margin-left:0.75em;
+    margin-right: 0.75em;
+}
+
+#portal-anontools {
+  li a { color: #FFF;
+         padding-left: 0.7em; }
+}
