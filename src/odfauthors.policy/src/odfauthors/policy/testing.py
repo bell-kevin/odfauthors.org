@@ -14,7 +14,7 @@ import odfauthors.policy
 import collective.MockMailHost
 
 
-class OdfAutthorspolicyLayer(PloneSandboxLayer):
+class OdfAuthorspolicyLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
