@@ -12,7 +12,14 @@
              tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                          cropText nocall:context/@@plone/cropText;">
 
-    <h1 i18n:translate="">ODFAuthors</h1>
+    <h1 i18n:translate="">Welcom to ODFAuthors!</h1>
+    <p i18n:translate="">This is a <b>development</b> site for LibreOffice documentation.</p>
+    <h2 i18n:translate="">How you can help at ODFAuthors</h2>
+    <p i18n:translate="">We are a group of volunteer reviewers, writers, editors, proofreader, indexers, and translators producing
+documentation. You need an account to log in to the website. Please write to <b>webmaster@odfauthors</b> and request an account. (We
+had to stop self-registration because of too many spam accounts.) But first! Please subscribe to the 
+<a href="mailto:odfauthors-discuss-subscribe@lists.odfauthors.org">odfauthors-discuss mailing list</a> and
+introduce yourself.</p>
 
 </metal:main>
 
